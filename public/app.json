@@ -1,0 +1,14 @@
+{
+    "startup_app": {
+        "name": "OpenFin Popout Demo",
+        "description": "OpenFin Popout Demo",
+        "url": "http://localhost:8080/",
+        "uuid": "react-portal-popout",
+        "autoShow": true
+    },
+    "runtime": {
+        "arguments": "",
+        "version": "stable"
+    },
+    "shortcut": {}
+}
