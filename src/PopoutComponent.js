@@ -1,10 +1,10 @@
 import React from 'react';
 
-const PopoutComponent = (props) => {
+const PopoutComponent = ({children, isOpen}) => {
     return (
         <div className="popoutComponent">
             <button>&gt;</button>
-            {props.children}
+            {children}
         </div>
     );
 }

@@ -4,7 +4,8 @@
   "description": "Multi window React app using Portals",
   "main": "index.js",
   "scripts": {
-    "start": "webpack-dev-server --mode development --hot"
+    "serve": "webpack-dev-server --mode development --hot",
+    "start": "concurrently \"npm run serve \" \"react-devtools\""
   },
   "repository": {
     "type": "git",

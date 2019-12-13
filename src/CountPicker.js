@@ -10,7 +10,7 @@ const CountPicker = () => {
     return (
         <div className="countPicker">
             <select>
-                {counters.map(c => (<option>{c.innerText}</option>))}
+                {counters.map((c, i) => (<option key={i}>{c.innerText}</option>))}
             </select>
             <span>0</span>
         </div>
