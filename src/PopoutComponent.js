@@ -3,8 +3,6 @@ import ReactDOM from 'react-dom';
 
 const PopoutComponent = (props) => {
     const selfRef = useRef();
-    
-    console.log('render', !!selfRef.current);
 
     const [isPoppedOut, setIsPoppedOut] = useState(false);
     const [canPopOut, setCanPopout] = useState(false);

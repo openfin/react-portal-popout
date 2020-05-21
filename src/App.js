@@ -4,6 +4,8 @@ import CounterPicker from './CountPicker';
 import Counter from './Counter';
 import PopoutComponent from './PopoutComponent';
 
+import ContextMenu from './ContextMenu';
+
 const App = () => {
     return (
         <>
@@ -11,6 +13,13 @@ const App = () => {
             <PopoutComponent>
                 <Counter/>
             </PopoutComponent>
+            <div id='menuTarget' style={{backgroundColor:'lightgray'}}>
+                CLICK ME FOR menu
+                <ContextMenu.Menu>
+                    <ContextMenu.Item>Save</ContextMenu.Item>
+                    <ContextMenu.Item>Close</ContextMenu.Item>
+                </ContextMenu.Menu>
+            </div>
         </>
     );
 }

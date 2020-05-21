@@ -1,4 +1,4 @@
-const OpenFinAdapter = require('hadouken-js-adapter');
+//const OpenFinAdapter = require('hadouken-js-adapter');
 
 module.exports = {
   entry: './src',
@@ -20,11 +20,11 @@ module.exports = {
     ]
   },
   devServer: {
-    contentBase: './public',
-    after: function(app, server) {
-      let manifest = `http://localhost:${server.options.port}/app.json`;
-      console.log('Launching OpenFin App: ', manifest);
-      OpenFinAdapter.launch({ manifestUrl: manifest });
-    }
+    contentBase: './public'//,
+    // after: function(app, server) {
+    //   let manifest = `http://localhost:${server.options.port}/app.json`;
+    //   console.log('Launching OpenFin App: ', manifest);
+    //   OpenFinAdapter.launch({ manifestUrl: manifest });
+    // }
   }
 };
